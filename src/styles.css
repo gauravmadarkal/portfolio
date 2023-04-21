@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("./assets/typography.css");
 body {
     max-width: 1800px;
-    margin: 2em auto;
+    margin: 1em auto;
+    font-family: rubik;
 }

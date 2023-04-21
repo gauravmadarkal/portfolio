@@ -2,16 +2,30 @@
     max-width: 1400px;
     width: 1400px;
     max-height: 100px;
-    position: relative;
     margin: 0 auto;
+    height: 70px;
+    align-items: center;
+    display: flex;
 }
 .logo {
     float: left;
 }
 .menu {
-    position: absolute;
-    right: 0;
+    float: right;
 }
 .menu:hover {
+    cursor: pointer;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 70px;
+}
+.s-icon {
+    margin: 0 2em;
+}
+.s-icon:hover {
     cursor: pointer;
 }

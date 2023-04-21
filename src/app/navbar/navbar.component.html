@@ -1,5 +1,10 @@
 <div class="navbar">
     <img src="../../assets/logo.png" class="logo" />
+    <div class="social-icons">
+        <span class="s-icon">Dribbble</span>
+        <span class="s-icon">Github</span>
+        <span class="s-icon">Linkedin</span>
+    </div>
     <img *ngIf="!navbarOpen" src="../../assets/burger_icon.png" class="menu" (click)="toggleMenu(true)" />
     <img *ngIf="navbarOpen" src="../../assets/close_menu.png" class="menu" (click)="toggleMenu(false)" />
 </div>

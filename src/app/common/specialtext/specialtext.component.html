@@ -1,0 +1,9 @@
+<!-- <p [ngClass]="{'special-text': size === 'sm', 'special-text t-md': size === 'md', 'special-text t-lg': size === 'lg'}"> -->
+<div class="special-text-wrapper">
+    <p [ngClass]="size === 'sm' ? 'special-text': size === 'md' ? 'special-text t-md' : 'special-text t-lg'">
+    {{content}}
+    <img src="../../../assets/highlight.png" class="highlight" />
+</p>
+<p [ngClass]="size === 'sm' ? 'other-text': size === 'md' ? 'other-text t-md' : 'other-text t-lg'">{{suffix}}</p>
+</div>
+<!-- [ngClass]="size === 'sm' ? 'hightlight': size === 'md' ? 'hightlight h-md' : 'hightlight h-lg'" -->

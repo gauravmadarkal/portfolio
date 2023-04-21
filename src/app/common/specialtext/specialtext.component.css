@@ -1,0 +1,26 @@
+.special-text-wrapper {
+    display: flex;
+}
+.special-text {
+    position: relative;
+    font-size: 1.2em;
+    width: fit-content;
+    margin-bottom: 0.2em;
+}
+.other-text {
+    font-size: 1.2em;
+    margin-left: 0.2em;
+    margin-bottom: 0.2em;
+}
+.t-md {
+    font-size: 2.2em;
+}
+.t-lg {
+    font-size: 4.2em;
+}
+.highlight {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0.6em;
+}
