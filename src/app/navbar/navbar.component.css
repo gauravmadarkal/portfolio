@@ -1,0 +1,17 @@
+.navbar {
+    max-width: 1400px;
+    width: 1400px;
+    max-height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+}
+.menu {
+    position: absolute;
+    right: 0;
+}
+.menu:hover {
+    cursor: pointer;
+}
