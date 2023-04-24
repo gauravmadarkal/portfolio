@@ -10,5 +10,5 @@ export class SpecialtextComponent {
   	@Input() content = '';
   	@Input() prefix = '';
   	@Input() suffix = '';
-
+  	@Input() cs = {};
 }

@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-tag',
-  templateUrl: './tag.component.html',
-  styleUrls: ['./tag.component.css']
+	selector: 'app-tag',
+	templateUrl: './tag.component.html',
+	styleUrls: ['./tag.component.css']
 })
 export class TagComponent {
-
+	@Input() content = "";
 }

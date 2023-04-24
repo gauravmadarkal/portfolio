@@ -1,9 +1,10 @@
 <!-- <p [ngClass]="{'special-text': size === 'sm', 'special-text t-md': size === 'md', 'special-text t-lg': size === 'lg'}"> -->
-<div class="special-text-wrapper">
-    <p [ngClass]="size === 'sm' ? 'special-text': size === 'md' ? 'special-text t-md' : 'special-text t-lg'">
+<div class="special-text-wrapper" [ngStyle]="cs">
+    <span *ngIf="prefix !== ''" [ngClass]="size === 'sm' ? 'other-text rt-m': size === 'md' ? 'other-text rt-m t-md' : 'other-text rt-m t-lg'">{{prefix}}</span>
+    <span [ngClass]="size === 'sm' ? 'special-text': size === 'md' ? 'special-text t-md' : 'special-text t-lg'">
     {{content}}
     <img src="../../../assets/highlight.png" class="highlight" />
-</p>
-<p [ngClass]="size === 'sm' ? 'other-text': size === 'md' ? 'other-text t-md' : 'other-text t-lg'">{{suffix}}</p>
+    </span>
+    <span *ngIf="suffix !== ''" [ngClass]="size === 'sm' ? 'other-text lt-m': size === 'md' ? 'other-text lt-m t-md' : 'other-text lt-m t-lg'">{{suffix}}</span>
 </div>
 <!-- [ngClass]="size === 'sm' ? 'hightlight': size === 'md' ? 'hightlight h-md' : 'hightlight h-lg'" -->

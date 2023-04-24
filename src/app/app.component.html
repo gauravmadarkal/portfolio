@@ -1,9 +1,32 @@
 <div class="app">
 	<app-navbar [navbarOpen]="navbarOpen" (navbarClickEvent)="toggleMenu($event)" ></app-navbar>
 	<div class="content">
-		<section>
-			<app-specialtext [size]="'lg'" [content]="'Full stack'" [suffix]="'developer'"></app-specialtext>
-			<p class="name">Gaurav <span>Madarkal</span></p>
+		<section class="hero-section">
+			<div class="h-txt-c">
+				<app-specialtext [size]="'lg'" [content]="'Full stack'" [suffix]="'developer'"></app-specialtext>
+				<p class="name">Gaurav <span>Madarkal</span></p>
+				<app-button (onClickListener)="contactMe()" [content]="'Contact Me'" [cs]="btnStyle" />
+			</div>
+			<img src="../assets/hero.svg" class="hero" />
+		</section>
+		<section id="companies">
+			<p class="text-ctr section-heading">Companies I have worked at</p>
+			<div class="hz-cl">
+				<img *ngFor="let company of companies; last as isLast" src="../assets/companies/{{company}}" [ngClass]="isLast ? 'c-logo-l' : 'c-logo'" />
+			</div>
+		</section>
+		<section id="about-me">
+			<img src="../assets/interview.svg" />
+			<div class="am-ts">
+				<app-tag [content]="'About me'"></app-tag>
+				<p class="s-heading">Why should you  <span>hire</span> me?</p>
+				<app-specialtext [size]="'sm'" [content]="'passionate'" [prefix]="'I am a'" [suffix]="'software engineer, interested in taking up complex problems and turning them into a simple efficient solution'"></app-specialtext>
+				<app-button (onClickListener)="contactMe()" [content]="'Download CV'" [cs]="btnStyle"></app-button>
+			</div>
+		</section>
+		<section id="area-expertise">
+			<app-tag [content]="'Area of expertise'"></app-tag>
+			
 		</section>
 	</div>
 </div>

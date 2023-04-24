@@ -5,11 +5,67 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+.text-ctr {
+    text-align: center;
+}
+.h-txt-c {
+    margin-top: 4em;
+}
+.hero-section {
+    margin: 5em 0;
+    display: flex;
+}
+.hero {
+    width: 40em;
+    margin-left: 5em;
+}
 .name {
     font-size: 4em;
     font-weight: bold;
     margin: 0;
+    margin-top: 0.2em;
 }
 .name span {
+    color: #9E823A;
+}
+.section-heading {
+    margin-top: 4em;
+    font-size: 2.5em;
+}
+.hz-cl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.c-logo-l {
+    width: 5em;
+    height: 5em;
+    filter: grayscale(100%);
+}
+.c-logo {
+    width: 10em;
+    height: 4em;
+    filter: grayscale(100%);
+}
+#about-me {
+    /* margin: 7em; */
+    width: 100%;
+    justify-content: center;
+    margin-top: 10em;
+    display: flex;
+}
+#about-me img {
+    width: 40em;
+}
+.am-ts {
+    margin-left: 4em;
+}
+.s-heading {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+.s-heading span {
     color: #9E823A;
 }

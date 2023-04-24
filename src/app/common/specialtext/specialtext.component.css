@@ -1,5 +1,8 @@
 .special-text-wrapper {
-    display: flex;
+    display: block;
+}
+:host(.extra-margin) {
+    margin-top: 4em;
 }
 .special-text {
     position: relative;
@@ -9,8 +12,13 @@
 }
 .other-text {
     font-size: 1.2em;
-    margin-left: 0.2em;
     margin-bottom: 0.2em;
+}
+.lt-m {
+    margin-left: 0.2em;
+}
+.rt-m {
+    margin-right: 0.2em;
 }
 .t-md {
     font-size: 2.2em;
@@ -22,5 +30,5 @@
     position: absolute;
     left: 0;
     width: 100%;
-    top: 0.6em;
+    top: 0.8em;
 }
